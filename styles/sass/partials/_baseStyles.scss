@@ -1,0 +1,39 @@
+@use "variables" as *;
+
+* {
+    list-style: none;
+}
+
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    font-family: $headingFont;
+    background-color: $greenAccent;
+    text-transform: uppercase;
+    border: 0.2em solid $greenAccent;
+    padding: 0.5em 2.5em;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+    background-color: $yellowAccent;
+    border: 1px solid $yellowAccent;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: $fwHeading;
+}

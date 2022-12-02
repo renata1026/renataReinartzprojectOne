@@ -1,0 +1,38 @@
+@use "variables" as *;
+
+.topNav {
+    position: absolute;
+    top: 1em;
+    right: 4em;
+}
+
+.topNav {
+    li {
+        list-style: none;
+
+        a {
+            color: $primary;
+            padding: .2em;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+
+}
+
+a:before,
+a:hover,
+a:focus {
+    text-decoration: none;
+    border-bottom: 2px solid $greenAccent;
+
+}
+
+.hamburger .fa-solid {
+    color: $primary;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 20em;
+    left: 1em;
+}
