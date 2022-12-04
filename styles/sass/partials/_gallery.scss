@@ -1,1 +1,120 @@
 @use "variables" as *;
+
+
+
+//Banner Section//
+.banner img {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+//Icon Section//
+.icon {
+    padding: 4em;
+}
+
+.icon {
+    padding: 1em;
+}
+
+.fa-solid {
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $greenAccent;
+    border: 3px solid $greenAccent;
+    align-self: center;
+    text-align: center;
+    margin-right: 0.5em;
+}
+
+.wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section.gallery {
+    margin: 0;
+}
+
+.wrapper ul {
+    padding: 0;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.flex {
+    display: inline list-item;
+}
+
+//Icon Section//
+
+@media (min-width: 600px) {
+
+    .icon {
+        padding: 4em;
+    }
+
+    .iconRowOne,
+    .iconRowTwo {
+        display: flex;
+        text-align: left;
+    }
+
+    .iconOne,
+    .iconTwo,
+    .iconThree,
+    .iconFour {
+        display: flex;
+        margin-left: 0.2em;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        justify-content: center;
+        width: 100%;
+        padding: 4em 0;
+    }
+
+    .featured {
+        display: flex;
+        background-color: $lightAccent;
+        padding: 4em;
+    }
+
+    .featured img {
+        margin-left: 1em;
+    }
+
+    .flexFeatured {
+        text-align: left;
+        margin-left: 6em;
+    }
+
+    section.gallery {
+        padding: 0;
+    }
+
+    .gallery {
+        display: flex;
+        text-align: none;
+        gap: 2em;
+        padding: 4em 0;
+    }
+
+    img.galleryOne,
+    img.galleryTwo,
+    img.galleryThree {
+        flex-basis: 33%;
+        height: 100%;
+    }
+}

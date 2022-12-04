@@ -19,27 +19,36 @@
 <header>
 
 	<body>
-		<div class="headerImage">
-			<img class="firstImage" src="captured-final-assets/header-image.jpg" alt="camera">
-			<img class="secondImage" src="captured-final-assets/header-box-image.jpg" alt="camera">
-		</div><!-- Close out wrapper-->
-		<h1>Captured</h1>
-		<!--hamburger menu-->
-		<div class="wrapper">
-			<div class="hamburger">
-				<i class="fa-solid fa-bars"></i>
-			</div>
-			<div class="topNav">
-				<ul class="navMenu">
-					<li class="navItem"><a href="#Home" class=navLink>Home</a></li>
-					<li class="navItem"><a href="#About" class=navLink>About</a></li>
-					<li class="navItem"><a href="#Blog" class=navLink>Blog</a></li>
-					<li class="navItem"><a href="#Contact" class=navLink>Contact</a></li>
-				</ul>
-			</div>
-		</div><!-- Close out wrapper-->
+		<nav>
+			<div class="headerImage">
+				<div class="hamburger" id="hamburger">
+					<i class="fa-solid fa-bars hamburgerIcon"></i>
+					<div class="mobileMenu">
+						<ul class="mobileNavMenu none">
+							<li><a href="#Home" class="mobile">Home</a></li>
+							<li><a href="#About" class="mobile">About</a></li>
+							<li><a href="#Blog" class="mobile">Blog</a></li>
+							<li><a href="#Contact" class="mobile">Contact</a></li>
+						</ul>
+					</div><!-- Close out mobileMenu-->
+				</div><!-- Close out hamburger-->
+				<img class="firstImage" src="captured-final-assets/header-image.jpg" alt="camera">
+				<img class="secondImage" src="captured-final-assets/header-box-image.jpg" alt="camera">
+			</div><!-- Close out headerImage-->
+			<h1>Captured</h1>
+			<!--hamburger menu-->
+			<div class="wrapper">
+				<div class="topNav">
+					<ul class="navMenu">
+						<li><a href="#Home">Home</a></li>
+						<li><a href="#About">About</a></li>
+						<li><a href="#Blog">Blog</a></li>
+						<li><a href="#Contact">Contact</a></li>
+					</ul>
+				</div><!-- Close out topNav-->
+			</div><!-- Close out wrapper-->
 		</nav><!-- Close out nav-->
-</header>
+</header><!-- Close out header-->
 <main>
 	<section class="sectionOne">
 		<div class="wrapper">
@@ -54,13 +63,13 @@
 			</p>
 			<button>Find out More</button>
 		</div><!-- Close out wrapper-->
-	</section>
-	<section class="products">
+	</section><!-- Close out sectionOne-->
+	<article class="blog">
 		<div class="rowOne">
-			<div class="productImageOne">
+			<div class="blogImageOne">
 				<img src="captured-final-assets/left-image.jpg" alt="camera">
-			</div><!-- Close out productImageOne-->
-			<div class="productTextOne">
+			</div><!-- Close out blogImageOne-->
+			<div class="blogTextOne">
 				<h3>Unlock Your Skills</h3>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque earum officiis officia, quis ut
 					perferendis rerum repellat ad impedit illum! Iste libero perspiciatis aspernatur totam laborum
@@ -70,13 +79,13 @@
 					totam illum quisquam perferendis.
 				</p>
 				<button>Read More</button>
-			</div><!-- Close out productImageOne-->
+			</div><!-- Close out blogTextOne-->
 		</div><!-- Close out rowOne-->
 		<div class="rowTwo">
-			<div class="productImageTwo">
+			<div class="blogImageTwo">
 				<img src="captured-final-assets/right-image.jpg" alt="camera">
-			</div><!-- Close out productImageOne-->
-			<div class="productTextTwo">
+			</div><!-- Close out blogImageTwo-->
+			<div class="blogTextTwo">
 				<h3>Getting New Gear</h3>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque earum officiis officia, quis ut
 					perferendis rerum repellat ad impedit illum! Iste libero perspiciatis aspernatur totam laborum
@@ -85,92 +94,92 @@
 					quia. Illum ab tenetur ex ut eos officiis sit?
 				</p>
 				<button>Read More</button>
-			</div><!-- Close out productImageTwo-->
+			</div><!-- Close out blogTextTwo-->
 		</div><!-- Close out rowTwo-->
-
-	</section>
+	</article>
+	<!--Close out article-->
 	<section class="icon">
 		<div class="wrapper">
 			<ul class="iconSection">
-				<div class="iconRowOne">
-					<li class="iconWrapper">
-						<div class="flex">
-							<i class="fa-solid fa-camera"></i>
-							<h3>Top Picks</h3>
-						</div>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque earum officiis officia,
-							quis
-							ut
-							perferendis rerum repellat ad impedit illum! Iste libero perspiciatis aspernatur totam
-							laborum
-							quidem nisi corrupti consectetur.</p>
-					</li>
-					<li class="iconWraper">
-						<div class="flex">
-							<i class="fa-solid fa-users"></i>
-							<h3>Community</h3>
-						</div>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque earum officiis officia,
-							quis
-							ut
-							perferendis rerum repellat ad impedit illum! Iste libero perspiciatis aspernatur totam
-							laborum
-							quidem nisi corrupti consectetur.</p>
-					</li>
+		</div>
+		<div class="iconRowOne">
+			<li class="iconWrapper">
+				<div class="iconOne">
+					<i class="fa-solid fa-camera"></i>
+					<h3>Top Picks</h3>
 				</div>
-				<div class="iconRowTwo">
-					<li class="iconWrapper">
-						<div class="flex">
-							<i class="fa-solid fa-file"></i>
-							<h3>Blog</h3>
-						</div>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque earum officiis officia, quis
-							ut
-							perferendis rerum repellat ad impedit illum! Iste libero perspiciatis aspernatur totam
-							laborum
-							quidem nisi corrupti consectetur.</p>
-					</li>
-					<li class="iconWrapper">
-						<div class="flex">
-							<i class="fa-solid fa-phone-flip"></i>
-							<h3>Get In Touch</h3>
-						</div>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque earum officiis officia, quis
-							ut
-							perferendis rerum repellat ad impedit illum! Iste libero perspiciatis aspernatur totam
-							laborum
-							quidem nisi corrupti consectetur.</p>
-					</li>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque earum officiis officia, quis
+					ut
+					perferendis rerum repellat ad impedit illum! Iste libero perspiciatis aspernatur totam
+					laborum
+					quidem nisi corrupti consectetur.</p>
+			</li>
+			<li class="iconWrapper">
+				<div class="iconTwo">
+					<i class="fa-solid fa-users"></i>
+					<h3>Community</h3>
 				</div>
-			</ul>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque earum officiis officia, quis
+					ut
+					perferendis rerum repellat ad impedit illum! Iste libero perspiciatis aspernatur totam
+					laborum
+					quidem nisi corrupti consectetur.</p>
+			</li>
+		</div>
+		<div class="iconRowTwo">
+			<li class="iconWrapper">
+				<div class="iconThree">
+					<i class="fa-solid fa-file"></i>
+					<h3>Blog</h3>
+				</div>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque earum officiis officia, quis
+					ut
+					perferendis rerum repellat ad impedit illum! Iste libero perspiciatis aspernatur totam
+					laborum
+					quidem nisi corrupti consectetur.</p>
+			</li>
+			<li class="iconWrapper">
+				<div class="iconFour">
+					<i class="fa-solid fa-phone-flip"></i>
+					<h3>Get In Touch</h3>
+				</div>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque earum officiis officia, quis
+					ut
+					perferendis rerum repellat ad impedit illum! Iste libero perspiciatis aspernatur totam
+					laborum
+					quidem nisi corrupti consectetur.</p>
+			</li>
+		</div>
+		</ul>
 		</div><!-- Close out wrapper-->
 	</section>
 	<section class="banner">
 		<img src="captured-final-assets/banner.jpg" alt="map">
 	</section>
 	<section class="gallery">
+		<div class="featured">
+			<img src="captured-final-assets/small-box.jpg" alt="man taking a photo with a camera">
+			<div class="flexFeatured">
+				<h3>This Month Profile</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero nostrum nisi, corrupti
+					voluptatibus
+					molestiae iure fugiat eos explicabo, ab tenetur id nulla aliquam non aperiam. Molestiae non
+					doloribus ad
+					reiciendis.</p>
+				<button>Find Out More</button>
+			</div>
+		</div>
+	</section>
+	<section class="gallery">
 		<div class="wrapper">
-			<ul>
-				<li class="featured">
-					<img src="captured-final-assets/small-box.jpg" alt="man taking a photo with a camera">
-					<div class="flexFeatured">
-						<h3>This Month Profile</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero nostrum nisi, corrupti
-							voluptatibus
-							molestiae iure fugiat eos explicabo, ab tenetur id nulla aliquam non aperiam. Molestiae non
-							doloribus ad
-							reiciendis.</p>
-						<button>Find Out More</button>
-					</div>
-				</li>
-				<li class="images">
-					<img class="galleryOne" src="captured-final-assets/gallery-image-1.jpg" alt="camera">
-					<img class="galleryTwo" src="captured-final-assets/gallery-image-2.jpg" alt="camera">
-					<img class="galleryThree" src="captured-final-assets/gallery-image-3.jpg" alt="camera">
-				<li>
-			</ul>
+			<div class="images">
+				<img class="galleryOne" src="captured-final-assets/gallery-image-1.jpg" alt="camera">
+				<img class="galleryTwo" src="captured-final-assets/gallery-image-2.jpg" alt="camera">
+				<img class="galleryThree" src="captured-final-assets/gallery-image-3.jpg" alt="camera">
+			</div>
 		</div><!-- Close out wrapper-->
 	</section><!-- Close out gallery-->
+	<script src="script.js"></script>
 	</body>
 </main>
 <footer>
