@@ -46,11 +46,11 @@ $lhButton: 32px;
 }
 
 h1 {
-    @include fontSize(90);
+    @include fontSize(50);
 }
 
 h2 {
-    @include fontSize(50);
+    @include fontSize(40);
 }
 
 h3 {

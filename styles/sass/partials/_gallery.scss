@@ -1,25 +1,12 @@
 @use "variables" as *;
 
-
-
-//Banner Section//
-.banner img {
-    height: 30vh;
-    width: 100%;
-    object-fit: cover;
-    object-position: left;
-}
-
 //Icon Section//
-.icon {
-    padding: 4em;
-}
 
 .icon {
     padding: 1em;
 }
 
-.fa-solid {
+.galleryIcon {
     font-size: 2em;
     width: 50px;
     height: 50px;
@@ -31,32 +18,67 @@
     margin-right: 0.5em;
 }
 
-.wrapper ul {
-    margin: 0;
+//Banner Section//
+.banner img {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+// Gallery Section
+
+.wrapper .iconSection {
     padding: 0;
 }
 
-.section.gallery {
-    margin: 0;
+.featured {
+    padding-top: 2em;
 }
 
-.wrapper ul {
-    padding: 0;
+.featured img {
+    object-fit: cover;
 }
 
 .images {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
+    padding: 1em;
+    justify-content: center;
 }
 
-.flex {
-    display: inline list-item;
+.images img {
+    flex-basis: 33%;
 }
 
 //Icon Section//
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    img.galleryOne,
+    img.galleryTwo,
+    img.galleryThree {
+        width: 33%;
+        height: 50%;
+    }
+
+    .featuredImage button {
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 1000px) {
 
     .icon {
         padding: 4em;
@@ -76,15 +98,7 @@
         margin-left: 0.2em;
     }
 
-    .images {
-        display: flex;
-        flex-direction: row;
-        gap: 2em;
-        justify-content: center;
-        width: 100%;
-        padding: 4em 0;
-    }
-
+    //Featured Section//
     .featured {
         display: flex;
         background-color: $lightAccent;
@@ -95,20 +109,30 @@
         margin-left: 1em;
     }
 
-    .flexFeatured {
+    .featuredImage {
         text-align: left;
         margin-left: 6em;
     }
 
-    section.gallery {
-        padding: 0;
-    }
-
+    //Gallery Section//
     .gallery {
         display: flex;
         text-align: none;
         gap: 2em;
         padding: 4em 0;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        justify-content: center;
+        width: 100%;
+        padding: 4em 0;
+    }
+
+    section.gallery {
+        padding: 0;
     }
 
     img.galleryOne,

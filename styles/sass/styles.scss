@@ -1,10 +1,10 @@
 @use "./partials/setup";
 @use "./partials/variables";
-@use "./partials/typography";
 @use "./partials/baseStyles";
 @use "./partials/sections";
 @use "./partials/nav";
-@use "./partials/gallery";
 @use "./partials/header";
+@use "./partials/blog";
+@use "./partials/gallery";
 @use "./partials/footer";
 @use "./partials/mediaQuery";

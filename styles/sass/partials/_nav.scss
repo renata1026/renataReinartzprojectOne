@@ -6,7 +6,8 @@
     right: 4em;
 }
 
-.topNav {
+.topNav,
+.mobileMenu {
     li {
         list-style: none;
 
@@ -32,36 +33,43 @@ a:focus {
     color: $primary;
     font-size: 3rem;
     position: absolute;
-    // bottom: 20em;
-    left: 0.5em;
+    right: 0.5em;
     top: 0.5em;
-    // z-index: 10;
-    border: 1px solid purple;
+    z-index: 10;
+
 }
 
 .hamburger {
     position: relative;
-    border: 1px solid blue;
 }
 
 .mobileMenu {
     position: absolute;
-    border: 1px solid red;
-    top: 4em;
-    left: 2em;
 }
 
 .mobileNavMenu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 0 10em;
+    margin-bottom: 3em;
+    background-color: $yellowAccent;
+    position: fixed;
+    height: 30vh;
+    width: 100%;
+    transition: .5s;
+
+}
+
+.mobileMenu li {
+    padding: 1em;
 }
 
 .none {
     display: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 
     .headerImage {
         display: flex;
@@ -79,9 +87,13 @@ a:focus {
     .topNav li a {
         margin-right: 1em;
     }
+
+    .mobileNavMenu {
+        width: 800px;
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .navMenu {
         display: none;
     }

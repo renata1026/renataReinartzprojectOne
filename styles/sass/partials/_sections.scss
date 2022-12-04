@@ -11,13 +11,17 @@
     margin: 0em auto;
 }
 
-.sectionOne,
-.blog {
-    padding: 4em;
+.sectionOne {
+    padding-top: 2em;
 }
 
 @media (min-width: 600px) {
     .sectionOne h2 {
         margin-top: 2em;
+    }
+
+    .sectionOne,
+    .blog {
+        padding: 4em;
     }
 }
