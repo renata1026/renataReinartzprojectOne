@@ -301,6 +301,7 @@ nav {
 
 body {
   text-align: center;
+  line-height: 32px;
 }
 
 p {
@@ -338,19 +339,13 @@ h4 {
     width: 90%;
     margin: 0 auto;
   }
-  h1 {
-    display: block;
-    position: absolute;
-    top: 3em;
-    right: 3em;
-  }
   button {
     margin-bottom: 0;
   }
   /*Convert to Rem*/
   h1 {
-    font-size: 138px;
-    font-size: 8.625rem;
+    font-size: 80px;
+    font-size: 5rem;
   }
   h2 {
     font-size: 70px;
@@ -372,6 +367,12 @@ nav {
   }
   p {
     padding: 0;
+  }
+}
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 100px;
+    font-size: 6.25rem;
   }
 }
 .sectionOne,
@@ -520,22 +521,23 @@ img.secondImage {
   display: none;
 }
 
-h1 {
+.homeHeading {
   position: absolute;
   top: 8em;
-  right: 0.9em;
+  right: 1em;
   margin: 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   img.secondImage {
     display: none;
   }
   img.firstImage {
     height: 50vh;
   }
-  h1 {
-    font-size: 4rem;
+  .homeHeading {
+    top: 5em;
+    right: 0.9em;
     top: 6em;
   }
   h2 {
@@ -560,7 +562,7 @@ h1 {
     right: 0;
     top: 9em;
   }
-  h1 {
+  .homeHeading {
     top: 4em;
     right: 3em;
     margin: 0;
@@ -839,9 +841,104 @@ footer {
   padding: 0.2em;
 }
 
-@media (min-width: 1000px) {
-  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
-}
 @media (min-width: 600px) {
-  /* all of our styles for TABLET devices will go within this breakpoint */
+  .blogPost {
+    background-color: #effdf3;
+  }
+  .heading {
+    position: relative;
+  }
+  .blog {
+    position: absolute;
+    z-index: 10;
+    bottom: 2em;
+    left: 7em;
+    padding: 0;
+  }
+  p {
+    text-align: left;
+  }
+  .blogPost {
+    padding: 4em 6em 0 0;
+    text-align: left;
+  }
+  .blogWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .blogColumnOne {
+    width: 40%;
+  }
+  .blogColumnTwo {
+    width: 60%;
+  }
+  .blogColumnOne,
+.blogColumnTwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 32px;
+  }
+  .blogColumnOne {
+    background-color: #fafafa;
+  }
+  img.sideImage {
+    width: 95%;
+  }
+  .columnTwoText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 28em;
+    padding-left: 5em;
+  }
+  img.postImage {
+    top: 23em;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  img.postImage {
+    display: block;
+    position: absolute;
+    border-top: 30px solid #fdfa69;
+    border-bottom: 30px solid #fdfa69;
+    border-left: 25px solid #fdfa69;
+    right: 0;
+  }
+  .comments {
+    padding-left: 5em;
+  }
+  .commentOne,
+.commentTwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  span {
+    display: block;
+  }
+  .commentOne img,
+.commentTwo img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding-right: 1em;
+  }
 }

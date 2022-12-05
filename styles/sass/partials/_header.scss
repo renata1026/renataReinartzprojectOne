@@ -20,15 +20,15 @@ img.secondImage {
     display: none;
 }
 
-h1 {
+.homeHeading {
     position: absolute;
     top: 8em;
-    right: .9em;
+    right: 1em;
     margin: 0;
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     img.secondImage {
         display: none;
     }
@@ -37,8 +37,9 @@ h1 {
         height: 50vh;
     }
 
-    h1 {
-        font-size: 4rem;
+    .homeHeading {
+        top: 5em;
+        right: .9em;
         top: 6em;
     }
 
@@ -49,6 +50,7 @@ h1 {
 }
 
 @media (min-width: 1000px) {
+
 
     .headerImage {
         display: flex;
@@ -69,7 +71,7 @@ h1 {
         top: 9em;
     }
 
-    h1 {
+    .homeHeading {
 
         top: 4em;
         right: 3em;

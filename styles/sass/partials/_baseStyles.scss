@@ -11,6 +11,7 @@
 
 body {
     text-align: center;
+    line-height: $lhBody;
 }
 
 p {
@@ -48,14 +49,6 @@ h4 {
         margin: 0 auto;
     }
 
-    h1 {
-        display: block;
-        position: absolute;
-        top: 3em;
-        right: 3em;
-
-    }
-
     button {
         margin-bottom: 0;
     }
@@ -67,7 +60,7 @@ h4 {
     }
 
     h1 {
-        @include fontSize(138);
+        @include fontSize(80);
     }
 
     h2 {
@@ -92,4 +85,16 @@ h4 {
         padding: 0;
     }
 
+}
+
+
+@media (min-width: 1000px) {
+    @mixin fontSize($sizeValue) {
+        font-size: $sizeValue * 1px;
+        font-size: ($sizeValue/16) * 1rem;
+    }
+
+    h1 {
+        @include fontSize(100);
+    }
 }

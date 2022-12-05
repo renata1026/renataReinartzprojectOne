@@ -1,0 +1,118 @@
+@use "variables" as *;
+
+
+
+@media (min-width: 600px) {
+
+
+    .blogPost {
+        background-color: $lightAccent;
+    }
+
+    //H1 Heading//
+    .heading {
+        position: relative;
+    }
+
+    .blog {
+        position: absolute;
+        z-index: 10;
+        bottom: 2em;
+        left: 7em;
+        padding: 0;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    //Overall Stylings
+
+    .blogPost {
+        padding: 4em 6em 0 0;
+        text-align: left;
+    }
+
+    .blogWrapper {
+        display: flex;
+    }
+
+    .blogColumnOne {
+        width: 40%;
+    }
+
+    .blogColumnTwo {
+        width: 60%;
+    }
+
+    .blogColumnOne,
+    .blogColumnTwo {
+        display: flex;
+        flex-direction: column;
+        line-height: $lhBody;
+    }
+
+    //Side Image Blog//
+
+    .blogColumnOne {
+        background-color: $secondary;
+    }
+
+
+    img.sideImage {
+        width: 95%;
+    }
+
+    //Main Blog Post//
+    .columnTwoText {
+        display: flex;
+        flex-direction: column;
+        margin-top: 28em;
+        padding-left: 5em;
+    }
+
+    img.postImage {
+        top: 23em;
+        object-fit: cover;
+    }
+
+    //Yellow Box Shadow//
+    img.postImage {
+        display: block;
+        position: absolute;
+        // border: 50px solid $yellowAccent;
+        border-top: 30px solid #fdfa69;
+        border-bottom: 30px solid #fdfa69;
+        border-left: 25px solid #fdfa69;
+        right: 0;
+
+    }
+
+    //Comment Section//
+    .comments {
+        padding-left: 5em;
+    }
+
+    .commentOne,
+    .commentTwo {
+        display: flex;
+    }
+
+    .comment {
+        display: flex;
+        flex-direction: column;
+    }
+
+    span {
+        display: block;
+    }
+
+    .commentOne img,
+    .commentTwo img {
+        object-fit: contain;
+        padding-right: 1em;
+    }
+
+
+
+}
