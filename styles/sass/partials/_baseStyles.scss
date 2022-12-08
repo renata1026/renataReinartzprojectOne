@@ -4,6 +4,11 @@
     list-style: none;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+}
+
 .wrapper {
     width: 100%;
     margin: 0 auto;
@@ -56,7 +61,7 @@ h4 {
     /*Convert to Rem*/
     @mixin fontSize($sizeValue) {
         font-size: $sizeValue * 1px;
-        font-size: ($sizeValue/16) * 1rem;
+        font-size: calc($sizeValue/16) * 1rem;
     }
 
     h1 {
@@ -72,7 +77,7 @@ h4 {
     }
 
     h4 {
-        @include fontSize(42);
+        @include fontSize(35);
     }
 
     p,
@@ -91,7 +96,7 @@ h4 {
 @media (min-width: 1000px) {
     @mixin fontSize($sizeValue) {
         font-size: $sizeValue * 1px;
-        font-size: ($sizeValue/16) * 1rem;
+        font-size: calc($sizeValue/16) * 1rem;
     }
 
     h1 {

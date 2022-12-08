@@ -1,6 +1,48 @@
 @use "variables" as *;
 
+//Adjust H1 header//
 
+.heading {
+    position: relative;
+}
+
+.blog {
+    position: absolute;
+    bottom: 3em;
+    left: 3em;
+    margin: 0;
+    text-align: center;
+}
+
+//Footer//
+footer p {
+    text-align: center;
+}
+
+//Adjust Blog Image sizes on Mobile//
+img.blogHeader {
+    margin: 0 auto;
+    height: 50vh;
+    width: 90%;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+img.postImage,
+img.sideImage {
+    margin: 0 auto;
+    width: 90%;
+    height: 30vh;
+    object-fit: cover;
+
+}
+
+.blogText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $secondary;
+}
 
 @media (min-width: 600px) {
 
@@ -9,16 +51,19 @@
         background-color: $lightAccent;
     }
 
-    //H1 Heading//
-    .heading {
-        position: relative;
+    .blogPost {
+        padding: 0;
+        text-align: left;
+        display: flex;
     }
+
+    //H1 Heading//
 
     .blog {
         position: absolute;
         z-index: 10;
-        bottom: 2em;
-        left: 7em;
+        bottom: 3em;
+        left: 6.5em;
         padding: 0;
     }
 
@@ -26,23 +71,19 @@
         text-align: left;
     }
 
-    //Overall Stylings
+    //Blog Column One//
 
-    .blogPost {
-        padding: 4em 6em 0 0;
-        text-align: left;
-    }
-
-    .blogWrapper {
+    .blogColumnOneText {
         display: flex;
+        flex-direction: column;
     }
 
     .blogColumnOne {
-        width: 40%;
+        width: 35%;
     }
 
     .blogColumnTwo {
-        width: 60%;
+        width: 65%;
     }
 
     .blogColumnOne,
@@ -52,50 +93,101 @@
         line-height: $lhBody;
     }
 
-    //Side Image Blog//
-
     .blogColumnOne {
-        background-color: $secondary;
+        align-items: flex-end;
+    }
+
+    //Side Image Blog//
+    img.sideImage {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+
+    }
+
+    // sideImage 
+
+    .imageContainerOne {
+        position: relative;
+        right: 4em;
+    }
+
+    .blogText li {
+        list-style: none;
+    }
+
+    .blogTest a {
+        text-decoration: none;
     }
 
 
-    img.sideImage {
-        width: 95%;
+    .blogColumnOne {
+        background-color: $lightAccent;
+        margin-top: 4em;
+    }
+
+    .blogColumnOneText {
+        background-color: $secondary;
+        width: 68%;
+        margin-right: 3em;
+        padding: 0 1em 1em 1em;
+
     }
 
     //Main Blog Post//
-    .columnTwoText {
-        display: flex;
-        flex-direction: column;
-        margin-top: 28em;
-        padding-left: 5em;
+
+    img.blogHeader {
+        width: 100%;
+        margin-bottom: 0;
     }
 
+    .blogColumnTwoText {
+        display: flex;
+        flex-direction: column;
+        // margin-top: 23em;
+        padding-left: 3em;
+        // margin-right: 5em;
+        border-bottom: 5px solid $yellowAccent;
+        border-left: 5px solid $yellowAccent;
+        // margin-left: 4em;
+    }
+
+    .blogColumnTwoText,
+    .comments {
+        margin-right: 5em;
+    }
+
+    // .imageContainer {
+    //     width: 100%;
+    // }
+
     img.postImage {
-        top: 23em;
+        // position: relative;
+        // bottom: 15em;
+        // left: 3.5em;
         object-fit: cover;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin-left: 1.3em;
+        margin-top: -250px;
     }
 
     //Yellow Box Shadow//
     img.postImage {
         display: block;
-        position: absolute;
+        // position: absolute;
         // border: 50px solid $yellowAccent;
-        border-top: 30px solid #fdfa69;
-        border-bottom: 30px solid #fdfa69;
-        border-left: 25px solid #fdfa69;
+        bbox-shadow: -23px 20px 5px 0px rgba(253, 250, 105, 1);
+        -webkit-box-shadow: -23px 20px 5px 0px rgba(253, 250, 105, 1);
+        -moz-box-shadow: -23px 20px 5px 0px rgba(253, 250, 105, 1);
         right: 0;
-
     }
 
     //Comment Section//
     .comments {
-        padding-left: 5em;
-    }
-
-    .commentOne,
-    .commentTwo {
-        display: flex;
+        padding-left: 3em;
     }
 
     .comment {
@@ -107,11 +199,77 @@
         display: block;
     }
 
+    .commentOne,
+    .commentTwo {
+        display: flex;
+    }
+
     .commentOne img,
     .commentTwo img {
         object-fit: contain;
-        padding-right: 1em;
+        margin: 0;
+        // padding-right: 1em;
+        // margin-bottom: 1.5em;
     }
+
+    .textComment p {
+        margin: 0;
+        padding-left: 2em;
+        margin-bottom: 5em;
+    }
+
+    //Form Section
+
+    form {
+        padding-left: 3em;
+        border: none;
+        margin-right: 5em;
+    }
+
+
+    input {
+        border: none;
+        background-color: $lightAccent;
+        border-bottom: 2px solid $greenAccent;
+    }
+
+    textarea {
+        border: none;
+        background-color: $lightAccent;
+        border: 2px solid $greenAccent;
+        margin-bottom: 2em;
+    }
+
+    .formRowOne {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    .name,
+    .email {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    .email {
+        margin-left: 2em;
+    }
+
+    fieldset {
+        border: none;
+    }
+
+    button {
+        margin-bottom: 3em;
+    }
+
+
 
 
 

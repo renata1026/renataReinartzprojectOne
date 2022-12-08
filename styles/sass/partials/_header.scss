@@ -22,10 +22,9 @@ img.secondImage {
 
 .homeHeading {
     position: absolute;
-    top: 8em;
+    top: 10em;
     right: 1em;
     margin: 0;
-
 }
 
 @media (min-width: 600px) {
@@ -38,7 +37,7 @@ img.secondImage {
     }
 
     .homeHeading {
-        top: 5em;
+        top: 6em;
         right: .9em;
         top: 6em;
     }
@@ -73,8 +72,8 @@ img.secondImage {
 
     .homeHeading {
 
-        top: 4em;
-        right: 3em;
+        top: 5em;
+        right: 4em;
         margin: 0;
     }
 }
