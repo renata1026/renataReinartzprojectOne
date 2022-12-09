@@ -1,1 +1,138 @@
 @use "variables" as *;
+
+.getInTouch {
+    position: absolute;
+    bottom: 3em;
+    // left: 5.5em;
+    // margin: 0;
+    text-align: center;
+    font-weight: $fwHeading;
+}
+
+.flexContact {
+    display: flex;
+    flex-direction: column;
+    background-color: $lightAccent;
+}
+
+//Column One//
+.contactColumnOne {
+    width: 100%;
+}
+
+//Font Awesome Icons//
+
+.infoEmail {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.fa-brands {
+    margin-right: 1em;
+
+}
+
+.contactIcons {
+    font-size: 1.5em;
+    color: $primary;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+i.fa-brands.fa-facebook-f:hover,
+i.fa-brands.fa-facebook-f:focus,
+i.fa-brands.fa-instagram:hover,
+i.fa-brands.fa-instagram:focus,
+i.fa-brands.fa-twitter:hover,
+i.fa-brands.fa-twitter:focus,
+i.fa-brands.fa-whatsapp:hover,
+i.fa-brands.fa-whatsapp:focus {
+    color: $greenAccent;
+}
+
+.address p {
+    line-height: 0.5;
+    font-size: $fsBody;
+    font-family: $bodyFont;
+}
+
+@media (min-width: 1000px) {
+
+    // Contact Form//
+
+    .flexContact {
+        display: flex;
+        flex-direction: row;
+    }
+
+    //Icons 
+    .contactIcons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fa-brands {
+
+        margin-bottom: 1em;
+    }
+
+    //Column One//
+    .contactColumnOne {
+        width: 40%;
+    }
+
+    .contactInfo {
+        margin: 10em;
+    }
+
+    //Column Two//
+    .contactColumnTwo {
+        width: 60%;
+    }
+
+    .contactForm,
+    .contactForm input,
+    .contactForm textArea {
+        background-color: $secondary;
+    }
+
+    .contactForm input {
+        margin-bottom: 1em;
+        ;
+    }
+
+    .contactColumnTwo {
+        position: relative;
+    }
+
+    form.contactForm {
+        padding-left: 0;
+    }
+
+    .contactForm {
+        position: absolute;
+        bottom: 10em;
+        right: 1em;
+        width: 100%;
+        padding-top: 3em;
+        box-shadow: -29px 28px 5px 0px rgba(253, 250, 105, 1);
+        -webkit-box-shadow: -29px 28px 5px 0px rgba(253, 250, 105, 1);
+        -moz-box-shadow: -29px 28px 5px 0px rgba(253, 250, 105, 1);
+    }
+
+    .contactForm button {
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+
+    .contactForm input#name,
+    .contactForm input#email,
+    .contactForm textArea {
+        padding: 1em;
+    }
+
+    .contactForm fieldset {
+        padding: 3em;
+    }
+}

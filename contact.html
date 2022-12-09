@@ -35,7 +35,7 @@
                 <img class="blogHeader" src="captured-final-assets/contact-header.jpg" alt="Taking a scenic shot">
             </div><!-- Close out headerImage-->
             <div class="heading">
-                <h1 class="blog">Get In Touch</h1>
+                <h1 class="getInTouch">Get In Touch</h1>
             </div><!-- Close out H1 header-->
             <!--desktop nav menu-->
             <div class="wrapper">
@@ -51,27 +51,49 @@
         </nav><!-- Close out nav-->
 </header><!-- Close out header-->
 <main>
-
-    <form action="submit">
-        <fieldset class="subscribe">
-            <div class="formRowOne">
-                <div class="name">
-                    <label class="sr-only" for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name">
-                </div><!-- Close out name-->
-                <div class="email">
-                    <label class="sr-only" for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email address">
-                </div><!-- Close out email-->
-            </div><!-- Close out formRowOne-->
-
-            <div class="comment">
-                <label class="sr-only" for "comment">Comment</label>
-                <textarea name="comment" id="comment" placeholder="Comment" cols="30" rows="10"></textarea>
-            </div>
-            <button type="submit">Post Comment</button>
-        </fieldset>
-    </form>
+    <div class="flexContact">
+        <div class="contactColumnOne">
+            <div class="contactInfo">
+                <div class="contactIcons">
+                    <i class="fa-brands fa-facebook-f" class="icon"></i>
+                    <i class=" fa-brands fa-instagram" class="icon"></i>
+                    <i class="fa-brands fa-twitter" class="icon"></i>
+                    <i class="fa-brands fa-whatsapp" class=icon></i>
+                </div><!-- Close out contactIcons-->
+                <h5 class="infoEmail"><strong>Info@email.com</strong></h5>
+                <div class="address">
+                    <p>123-456-7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div><!-- Close out address-->
+            </div><!-- Close out contact info-->
+        </div><!-- Close out contactColumnOne-->
+        <div class="contactColumnTwo">
+            <form action="submit" class="contactForm">
+                <fieldset class="subscribe">
+                    <div class="formRowOne">
+                        <div class="name">
+                            <label class="sr-only" for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name">
+                        </div><!-- Close out name-->
+                        <div class="email">
+                            <label class="sr-only" for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email address">
+                        </div><!-- Close out email-->
+                    </div><!-- Close out formRowOne-->
+                    <div class="comment">
+                        <!-- Close out comment-->
+                        <label class="sr-only" for "message">Message</label>
+                        <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                    </div><!-- Close out comment-->
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <!--Close out contactColumnTwo-->
+    </div>
+    <!--Close out flexContact-->
     </div><!-- Close out blogColumnTwo-->
     </div><!-- Close out wrapper-->
     </article><!-- Close out sectionOne-->

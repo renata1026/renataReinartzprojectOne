@@ -34,8 +34,23 @@ img.sideImage {
     width: 90%;
     height: 30vh;
     object-fit: cover;
-
 }
+
+.list {
+    padding-left: 1em;
+}
+
+.list li {
+    list-style: disc;
+    color: $greenAccent;
+    font-size: 0.8em;
+    padding-left: 1em;
+}
+
+.list a {
+    font-size: $fsBody;
+}
+
 
 .blogText {
     display: flex;
@@ -44,9 +59,59 @@ img.sideImage {
     background-color: $secondary;
 }
 
+// Form Section//
+form {
+    border: none;
+}
+
+
+input {
+    border: none;
+    background-color: $lightAccent;
+    border-bottom: 2px solid $greenAccent;
+}
+
+textarea {
+    border: none;
+    background-color: $lightAccent;
+    border: 2px solid $greenAccent;
+}
+
+
+.name,
+.email,
+textarea {
+    margin-bottom: 2em;
+}
+
+input#name,
+input#email {
+    width: 90%;
+}
+
+fieldset {
+    border: none;
+}
+
+button {
+    margin-bottom: 3em;
+}
+
+input#name,
+input#email,
+textArea {
+    padding: 1em;
+    font-size: $fsBody;
+    color: $primary;
+}
+
+textArea {
+    resize: none;
+}
+
 @media (min-width: 600px) {
 
-
+    //Overall blog styles//
     .blogPost {
         background-color: $lightAccent;
     }
@@ -63,7 +128,7 @@ img.sideImage {
         position: absolute;
         z-index: 10;
         bottom: 3em;
-        left: 6.5em;
+        left: 6em;
         padding: 0;
     }
 
@@ -72,6 +137,10 @@ img.sideImage {
     }
 
     //Blog Column One//
+
+    .blogColumnOneText h4 {
+        margin-bottom: 0;
+    }
 
     .blogColumnOneText {
         display: flex;
@@ -106,25 +175,21 @@ img.sideImage {
 
     }
 
-    // sideImage 
+    // Side Image Blog Column One 
 
     .imageContainerOne {
         position: relative;
         right: 4em;
     }
 
-    .blogText li {
-        list-style: none;
-    }
-
-    .blogTest a {
+    .blogColumnOneText a {
         text-decoration: none;
+        color: $primary;
     }
-
 
     .blogColumnOne {
         background-color: $lightAccent;
-        margin-top: 4em;
+        margin-top: 7em;
     }
 
     .blogColumnOneText {
@@ -132,10 +197,9 @@ img.sideImage {
         width: 68%;
         margin-right: 3em;
         padding: 0 1em 1em 1em;
-
     }
 
-    //Main Blog Post//
+    //Main Blog Post - Column2//
 
     img.blogHeader {
         width: 100%;
@@ -145,12 +209,22 @@ img.sideImage {
     .blogColumnTwoText {
         display: flex;
         flex-direction: column;
-        // margin-top: 23em;
         padding-left: 3em;
-        // margin-right: 5em;
         border-bottom: 5px solid $yellowAccent;
         border-left: 5px solid $yellowAccent;
-        // margin-left: 4em;
+    }
+
+
+    .blogColumnTwoText p {
+        margin-bottom: 2em;
+    }
+
+    .blogColumnTwoText h2 {
+        margin-bottom: 0;
+    }
+
+    .date {
+        margin-top: 0;
     }
 
     .blogColumnTwoText,
@@ -158,14 +232,7 @@ img.sideImage {
         margin-right: 5em;
     }
 
-    // .imageContainer {
-    //     width: 100%;
-    // }
-
     img.postImage {
-        // position: relative;
-        // bottom: 15em;
-        // left: 3.5em;
         object-fit: cover;
         width: 100%;
         height: auto;
@@ -177,8 +244,6 @@ img.sideImage {
     //Yellow Box Shadow//
     img.postImage {
         display: block;
-        // position: absolute;
-        // border: 50px solid $yellowAccent;
         bbox-shadow: -23px 20px 5px 0px rgba(253, 250, 105, 1);
         -webkit-box-shadow: -23px 20px 5px 0px rgba(253, 250, 105, 1);
         -moz-box-shadow: -23px 20px 5px 0px rgba(253, 250, 105, 1);
@@ -208,8 +273,6 @@ img.sideImage {
     .commentTwo img {
         object-fit: contain;
         margin: 0;
-        // padding-right: 1em;
-        // margin-bottom: 1.5em;
     }
 
     .textComment p {
@@ -217,26 +280,17 @@ img.sideImage {
         padding-left: 2em;
         margin-bottom: 5em;
     }
+}
 
+@media (min-width: 1000px) {
     //Form Section
 
     form {
         padding-left: 3em;
-        border: none;
         margin-right: 5em;
     }
 
-
-    input {
-        border: none;
-        background-color: $lightAccent;
-        border-bottom: 2px solid $greenAccent;
-    }
-
     textarea {
-        border: none;
-        background-color: $lightAccent;
-        border: 2px solid $greenAccent;
         margin-bottom: 2em;
     }
 
@@ -253,24 +307,14 @@ img.sideImage {
         width: 50%;
     }
 
-    form button {
-        width: 100%;
-    }
-
     .email {
         margin-left: 2em;
     }
 
-    fieldset {
-        border: none;
+    form button {
+        width: 100%;
+        padding: 0.2em;
     }
-
-    button {
-        margin-bottom: 3em;
-    }
-
-
-
 
 
 }

@@ -21,9 +21,9 @@
     }
 }
 
-a:before,
 a:hover,
-a:focus {
+a:focus,
+a:active {
     text-decoration: none;
     border-bottom: 2px solid $greenAccent;
 
