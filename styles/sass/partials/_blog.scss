@@ -129,10 +129,6 @@
         padding: 1em;
     }
 
-    .featuredImage p {
-        text-align: center;
-    }
-
     .blogTextTwo {
         text-align: left;
     }
@@ -149,4 +145,13 @@
     .gallery .wrapper {
         width: 100%;
     }
+}
+
+@media (min-width: 1000px) {
+    .blogTextTwo {
+        text-align: right;
+    }
+
+
+
 }

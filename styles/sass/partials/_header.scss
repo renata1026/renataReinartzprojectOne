@@ -11,7 +11,7 @@ h4 {
 img.firstImage {
     width: 100%;
     height: 50vh;
-    // max-width: 1200px;
+    display: block;
     object-fit: cover;
     object-position: 30% top;
 }
@@ -29,8 +29,14 @@ img.secondImage {
 .homeHeading {
     position: absolute;
     top: 6em;
-    right: 1em;
+    width: 100%;
     margin: 0;
+}
+
+@media(min-width: 450px) {
+    .homeHeading {
+        top: 8em;
+    }
 }
 
 @media (min-width: 600px) {
@@ -42,20 +48,12 @@ img.secondImage {
         height: 50vh;
     }
 
-    .homeHeading {
-        top: 5em;
-        right: .9em;
-
-    }
-
     h2 {
         font-size: 3rem;
     }
-}
 
-@media (min-width: 850px) {
     .homeHeading {
-        top: 12em;
+        top: 5em;
     }
 }
 
@@ -81,8 +79,7 @@ img.secondImage {
     }
 
     .homeHeading {
-        top: 5em;
-        right: 4em;
+        right: 0.1em;
         margin: 0;
     }
 }

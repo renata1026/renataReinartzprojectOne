@@ -2,8 +2,8 @@
 
 .getInTouch {
     position: absolute;
-    bottom: 2em;
-    left: 2.5em;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     font-weight: $fwHeading;
 }
@@ -77,7 +77,7 @@ i.fa-brands.fa-whatsapp:focus {
 
     .getInTouch {
         bottom: 2em;
-        left: 6em;
+        left: 1.5em;
     }
 
     // Contact Form//
@@ -137,8 +137,8 @@ i.fa-brands.fa-whatsapp:focus {
 
     .contactForm {
         position: absolute;
-        bottom: 17em;
-        right: 1em;
+        bottom: 8em;
+        right: 0em;
         width: 100%;
         padding-top: 3em;
         box-shadow: -33px 31px 5px 0px rgba(253, 250, 105, 1);
