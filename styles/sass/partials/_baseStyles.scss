@@ -5,10 +5,7 @@
 }
 
 
-img {
-    display: block;
-    margin: 0 auto;
-}
+
 
 .wrapper {
     width: 100%;
@@ -35,7 +32,6 @@ button {
     display: inline-block;
     transition: 0.3s;
     margin-bottom: 2em;
-
 }
 
 button:hover,
@@ -55,7 +51,7 @@ h5 {
 }
 
 h2 {
-    line-height: $lhH2;
+    line-height: $lhBody;
 }
 
 @media (min-width: 600px) {
@@ -115,5 +111,10 @@ h2 {
 
     h1 {
         @include fontSize(100);
+    }
+
+    img {
+        display: block;
+        // margin: 0 auto;
     }
 }

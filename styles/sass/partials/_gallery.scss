@@ -34,6 +34,8 @@
 
 .featured {
     padding-top: 2em;
+    background-color: $primary;
+    color: $secondary;
 }
 
 .featured img {
@@ -52,8 +54,6 @@
 .images img {
     flex-basis: 33%;
 }
-
-//Icon Section//
 
 @media (min-width: 800px) {
 

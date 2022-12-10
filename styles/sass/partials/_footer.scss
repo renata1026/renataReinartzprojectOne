@@ -5,3 +5,10 @@ footer {
     background-color: $primary;
     padding: 0.1em;
 }
+
+footer p {
+    margin: 0;
+    padding: 0.2em;
+    font-family: $bodyFont;
+    text-align: center;
+}

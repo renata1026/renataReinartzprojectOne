@@ -2,11 +2,15 @@
 
 .getInTouch {
     position: absolute;
-    bottom: 3em;
-    // left: 5.5em;
-    // margin: 0;
+    bottom: 2em;
+    left: 2.5em;
     text-align: center;
     font-weight: $fwHeading;
+}
+
+.getInTouch span {
+    display: block;
+    text-align: center;
 }
 
 .flexContact {
@@ -38,6 +42,7 @@
     text-align: left;
     display: flex;
     justify-content: center;
+    margin-top: 2em;
 }
 
 i.fa-brands.fa-facebook-f:hover,
@@ -51,6 +56,11 @@ i.fa-brands.fa-whatsapp:focus {
     color: $greenAccent;
 }
 
+.infoEmail,
+.address p {
+    text-align: center;
+}
+
 .address p {
     line-height: 0.5;
     font-size: $fsBody;
@@ -58,6 +68,17 @@ i.fa-brands.fa-whatsapp:focus {
 }
 
 @media (min-width: 1000px) {
+
+
+    .getInTouch span {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .getInTouch {
+        bottom: 2em;
+        left: 6em;
+    }
 
     // Contact Form//
 
@@ -68,8 +89,7 @@ i.fa-brands.fa-whatsapp:focus {
 
     //Icons 
     .contactIcons {
-        display: flex;
-        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .fa-brands {
@@ -84,6 +104,11 @@ i.fa-brands.fa-whatsapp:focus {
 
     .contactInfo {
         margin: 10em;
+    }
+
+    .infoEmail,
+    .address p {
+        text-align: left;
     }
 
     //Column Two//
@@ -112,13 +137,13 @@ i.fa-brands.fa-whatsapp:focus {
 
     .contactForm {
         position: absolute;
-        bottom: 10em;
+        bottom: 17em;
         right: 1em;
         width: 100%;
         padding-top: 3em;
-        box-shadow: -29px 28px 5px 0px rgba(253, 250, 105, 1);
-        -webkit-box-shadow: -29px 28px 5px 0px rgba(253, 250, 105, 1);
-        -moz-box-shadow: -29px 28px 5px 0px rgba(253, 250, 105, 1);
+        box-shadow: -33px 31px 5px 0px rgba(253, 250, 105, 1);
+        -webkit-box-shadow: -33px 31px 5px 0px rgba(253, 250, 105, 1);
+        -moz-box-shadow: -33px 31px 5px 0px rgba(253, 250, 105, 1);
     }
 
     .contactForm button {

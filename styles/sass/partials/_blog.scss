@@ -42,11 +42,6 @@
     border: 1px solid $primary;
 }
 
-.featured {
-    background-color: $primary;
-    color: $secondary;
-}
-
 @media (min-width: 600px) {
 
 
@@ -127,5 +122,31 @@
 @media (min-width: 800px) {
     .blogTextOne button {
         margin-bottom: 1.5em;
+    }
+
+    .blogTextOne,
+    .featured {
+        padding: 1em;
+    }
+
+    .featuredImage p {
+        text-align: center;
+    }
+
+    .blogTextTwo {
+        text-align: left;
+    }
+
+    .blogTextTwo h3 {
+        padding-left: 2em;
+
+    }
+
+    .blogTextTwo button {
+        margin-left: 4em;
+    }
+
+    .gallery .wrapper {
+        width: 100%;
     }
 }

@@ -20,9 +20,15 @@ img.secondImage {
     display: none;
 }
 
+//H1 Heading//
+
+.headerImage {
+    position: relative;
+}
+
 .homeHeading {
     position: absolute;
-    top: 10em;
+    top: 6em;
     right: 1em;
     margin: 0;
 }
@@ -37,15 +43,20 @@ img.secondImage {
     }
 
     .homeHeading {
-        top: 6em;
+        top: 5em;
         right: .9em;
-        top: 6em;
+
     }
 
     h2 {
         font-size: 3rem;
     }
+}
 
+@media (min-width: 850px) {
+    .homeHeading {
+        top: 12em;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -62,7 +73,6 @@ img.secondImage {
     img.secondImage {
         display: block;
         position: absolute;
-        // border: 50px solid $yellowAccent;
         border-top: 30px solid #fdfa69;
         border-bottom: 30px solid #fdfa69;
         border-left: 25px solid #fdfa69;
@@ -71,7 +81,6 @@ img.secondImage {
     }
 
     .homeHeading {
-
         top: 5em;
         right: 4em;
         margin: 0;

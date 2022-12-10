@@ -1,7 +1,15 @@
 @use "variables" as *;
 
-//Adjust H1 header//
+//Adjust Blog Image sizes on Mobile//
+img.blogHeader {
+    margin: 0 auto;
+    height: 50vh;
+    width: 90%;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
 
+//Adjust H1 header//
 .heading {
     position: relative;
 }
@@ -14,26 +22,19 @@
     text-align: center;
 }
 
-//Footer//
-footer p {
-    text-align: center;
-}
-
-//Adjust Blog Image sizes on Mobile//
-img.blogHeader {
-    margin: 0 auto;
-    height: 50vh;
-    width: 90%;
-    object-fit: cover;
-    margin-bottom: 1em;
-}
-
 img.postImage,
 img.sideImage {
     margin: 0 auto;
     width: 90%;
     height: 30vh;
     object-fit: cover;
+}
+
+//Blog Column One//
+
+.blogColumnOneText a {
+    text-decoration: none;
+    color: $primary;
 }
 
 .list {
@@ -51,13 +52,12 @@ img.sideImage {
     font-size: $fsBody;
 }
 
-
-.blogText {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: $secondary;
-}
+// .blogText {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     background-color: $secondary;
+// }
 
 // Form Section//
 form {
@@ -107,6 +107,10 @@ textArea {
 
 textArea {
     resize: none;
+}
+
+.comment img {
+    display: auto;
 }
 
 @media (min-width: 600px) {
@@ -182,10 +186,6 @@ textArea {
         right: 4em;
     }
 
-    .blogColumnOneText a {
-        text-decoration: none;
-        color: $primary;
-    }
 
     .blogColumnOne {
         background-color: $lightAccent;
@@ -221,6 +221,7 @@ textArea {
 
     .blogColumnTwoText h2 {
         margin-bottom: 0;
+        line-height: $lhH2;
     }
 
     .date {
